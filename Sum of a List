@@ -1,0 +1,12 @@
+# Hey friend, this code calculates the sum of a list of numbers
+# by simply adding each element in a loop. Very straightforward!
+
+def sum_of_list(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+# Example usage
+my_list = [1, 2, 3, 4]
+print(sum_of_list(my_list))  # Output: 10
