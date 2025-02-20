@@ -1,7 +1,7 @@
 # Python Algorithms
 
 ## Overview
-This repository contains **40 simple Python algorithms** that cover a wide range of fundamental computational tasks, from sorting and searching to more advanced operations like shortest path finding and string matching. Each algorithm is designed to be easily readable, with clear comments explaining the purpose and method.
+This repository contains **40 simple Python algorithms** that cover a wide range of fundamental computational tasks, from sorting and searching to more advanced operations like shortest path finding and string matching. Each algorithm is designed to be easily readable, with clear comments explaining the purpose and method. Each file has one or two lines comments at first to say whats the code and how it works.
 
 ## Algorithms Included
 1. Basics (e.g., sum of a list, factorial, Fibonacci, prime checks)
