@@ -1,0 +1,13 @@
+# Hey there, this code does a linear search on a list.
+# It checks elements one by one until a match is found or the list ends.
+
+def linear_search(arr, target):
+    for index, value in enumerate(arr):
+        if value == target:
+            return index
+    return -1
+
+# Example usage
+numbers = [10, 20, 30, 40]
+print(linear_search(numbers, 30))  # Output: 2
+print(linear_search(numbers, 50))  # Output: -1 (not found)
