@@ -1,0 +1,15 @@
+# Hi there, Quick Sort chooses a pivot and then partitions the list
+# so that all elements less than pivot are on one side and greater on the other.
+
+def quick_sort(arr):
+    if len(arr) < 2:
+        return arr
+    pivot = arr[0]
+    less = [x for x in arr[1:] if x <= pivot]
+    greater = [x for x in arr[1:] if x > pivot]
+    return quick_sort(less) + [pivot] + quick_sort(greater)
+
+# Example usage
+nums = [10, 7, 8, 9, 1, 5]
+sorted_nums = quick_sort(nums)
+print(sorted_nums)  # Output: [1, 5, 7, 8, 9, 10]
