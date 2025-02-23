@@ -1,0 +1,14 @@
+# Hi there, this code sorts a list using the Bubble Sort algorithm.
+# It repeatedly swaps adjacent elements if they are in the wrong order.
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+# Example usage
+nums = [64, 25, 12, 22, 11]
+bubble_sort(nums)
+print(nums)  # Output: [11, 12, 22, 25, 64]
