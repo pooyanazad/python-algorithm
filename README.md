@@ -4,12 +4,12 @@
 This repository contains **20 simple Python algorithms** that cover a wide range of fundamental computational tasks, from sorting and searching to more advanced operations like shortest path finding and string matching. Each algorithm is designed to be easily readable, with clear comments explaining the purpose and method. Each file has one or two lines comments at first to say whats the code and how it works.
 
 ## Algorithms Included
-1. Basics (e.g., sum of a list, factorial, Fibonacci, prime checks)
-2. Common Operations (e.g., GCD, LCM, palindrome checks)
-3. Searching & Sorting (linear search, binary search, bubble sort, merge sort, quick sort, etc.)
-4. Graph Algorithms (BFS, DFS, Dijkstra, topological sort, cycle detection)
-5. Classic String Operations (checking anagrams, KMP, Rabin-Karp)
-6. Dynamic Programming (longest common subsequence, longest increasing subsequence)
+1. Basics
+2. Common Operations
+3. Searching & Sorting
+4. Graph Algorithms
+5. Classic String Operations
+6. Dynamic Programming
 
 ## Getting Started
 1. **Clone** this repository.
