@@ -1,0 +1,11 @@
+# Hey friend, Tower of Hanoi moves a stack of disks from one peg to another,
+# following the rule of not placing larger disks on top of smaller ones.
+
+def tower_of_hanoi(n, source, helper, target):
+    if n > 0:
+        tower_of_hanoi(n-1, source, target, helper)
+        print(f"Move disk {n} from {source} to {target}")
+        tower_of_hanoi(n-1, helper, source, target)
+
+# Example usage
+tower_of_hanoi(3, 'A', 'B', 'C')
