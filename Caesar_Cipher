@@ -1,0 +1,16 @@
+# Hey buddy, a Caesar cipher shifts each letter by a given number.
+# We'll handle only uppercase A-Z for simplicity.
+
+def caesar_encrypt(text, shift):
+    encrypted = ""
+    for ch in text:
+        if 'A' <= ch <= 'Z':
+            # Shift character and wrap around
+            new_ord = (ord(ch) - ord('A') + shift) % 26 + ord('A')
+            encrypted += chr(new_ord)
+        else:
+            encrypted += ch
+    return encrypted
+
+# Example usage
+print(caesar_encrypt("HELLO WORLD", 3))  # Output: KHOOR ZRUOG
