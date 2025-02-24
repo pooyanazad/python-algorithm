@@ -1,0 +1,13 @@
+# Hello friend, let's count the vowels in a string.
+# We'll consider "a, e, i, o, u" as vowels.
+
+def count_vowels(s):
+    vowels = set("aeiouAEIOU")
+    count = 0
+    for ch in s:
+        if ch in vowels:
+            count += 1
+    return count
+
+# Example usage
+print(count_vowels("Hello World"))  # Output: 3 (e, o, o)
