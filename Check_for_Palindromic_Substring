@@ -1,0 +1,24 @@
+# Hey buddy, this checks if there's at least one palindromic substring
+# by expanding around each center. We'll do a simple example that returns any palindrome found.
+
+def find_palindromic_substring(s):
+    for center in range(len(s)):
+        # odd length palindromes
+        left, right = center, center
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            if right - left + 1 > 1:  # palindrome length > 1
+                return s[left:right+1]
+            left -= 1
+            right += 1
+        # even length palindromes
+        left, right = center, center + 1
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            if right - left + 1 > 1:
+                return s[left:right+1]
+            left -= 1
+            right += 1
+    return None
+
+# Example usage
+print(find_palindromic_substring("abcba"))  # Output might be "bcb" or "abcba"
+print(find_palindromic_substring("hello"))  # Might return None or a palindrome if found
